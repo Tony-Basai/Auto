@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +7,25 @@
     <title>Car rental</title>
 </head>
 <body class="roboto">
-    <header class="max-w-[100%] w-full absolute z-2 bg-[white] fixed border-b-[0.0625rem] border-[#E5E5E5] mx-auto">
-        <nav class="max-w-[81.5rem] mx-auto flex justify-between pt-[1.625rem] pb-[1.625rem] pr-[7.15rem]">
+    <header class="max-w-[90rem] w-full absolute z-2 bg-[white] fixed border-b-[0.0625rem] border-[#E5E5E5] mx-auto">
+        <nav class="max-w-[81.5rem] w-full mx-auto flex justify-between pt-[1.625rem] pr-[7.15rem] pb-[1.625rem] pl-[1.625rem]">
             <img class="cursor-pointer" src="./Auto-img/logo.svg" alt="">
             <div class="flex items-center gap-[7.1875rem]">
-                <a class="text-[0.9375rem]/[100%] hover:text-green-700 cursor-pointer">
+                <a href="#home" class="text-[0.9375rem]/[100%] hover:text-green-700 cursor-pointer">
                     Главная
                 </a>
-                <a class="text-[15px]/[100%] hover:text-green-700 cursor-pointer">
+                <a href="#auto" class="text-[15px]/[100%] hover:text-green-700 cursor-pointer">
                     Автомобили
                 </a>
-                <a class="text-[15px]/[100%] hover:text-green-700 cursor-pointer">
+                <a href="#booking-form" class="text-[15px]/[100%] hover:text-green-700 cursor-pointer">
                     Бронирование авто
                 </a>
             </div>
         </nav>
     </header>
-    <section class="max-w-[120rem] mx-auto">
+    <section id="home" class="max-w-[120rem] mx-auto pr-[1rem] pl-[1rem]">
         <div class="pt-[5.5625rem]">
-            <img class="absolute" src="./Auto-img/background.svg" alt="">
+            <img class="absolute max-w-[83rem] w-full" src="./Auto-img/background.svg" alt="">
             <div class="max-w-[81.5rem] mx-auto relative flex flex-col gap-[2.5rem] mt-[6.5rem]">
                 <h2 class="text-[5rem]/[110%] text-[#030305] font-bold">
                     Аренда премиальных автомобилей
@@ -39,7 +39,7 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[81.5rem] mx-auto pt-[12.5rem]">
+    <section id="auto" class="max-w-[81.5rem] mx-auto pt-[10rem] pr-[1rem] pl-[1rem]">
         <h3 class="text-[3.75rem]/[100%] text-[#030305] font-bold">
             Наш автопарк
         </h3>
@@ -189,12 +189,12 @@
                     ЗАБРОНИРОВАТЬ
                 </button>
             </div>
-            <div class="flex flex-col items-center gap-[1.0625rem]">
+            <div class="flex flex-col items-center gap-[1.0625rem] flex-wrap">
                 <img class="w-full mb-4" src="./Auto-img/1.svg" alt="">
                 <h5 class="text-[1.5rem]/[150%] text-[#030305] font-bold">
                     Lamborghini Huracan Spyder
                 </h5>
-                <div class="flex gap-[2.5rem]">
+                <div class="flex gap-[2.5rem] flex-wrap">
                     <div class="text-[1rem]/[130%] flex flex-col items-center gap-[0.6875rem]">
                         <img src="./Auto-img/gear.svg" alt="">
                         <p class="text-center font-bold">
@@ -220,27 +220,27 @@
             </div>
         </div>
     </section>
-    <section class="max-w-[81.5rem] mx-auto pt-[11.5rem]">
+    <section id="booking-form" class="max-w-[81.5rem] mx-auto pt-[10rem] pr-[1rem] pl-[1rem]">
         <h3 class="text-[3.75rem]/[100%] text-[#030305] font-bold">
             Узнать цену и забронировать
         </h3>
-        <p class="text-[1rem]/[130%] font-normal">
+        <p class="text-[1rem]/[130%] font-normal pt-[1.5rem]">
             Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования
         </p>
-        <div class="max-w-[81.5rem] flex pt-[3.75rem] ">
-            <div class="max-w-[21.5rem] w-full relative z-2 flex flex-col gap-[0.9375rem]"> 
-                <input class="border-1 border-[#5D5D5F] pt-[1.375rem] pb-[1.375rem] pl-[1.125rem]" placeholder="Ваше имя" type="text">
-                <input class="border-1 border-[#5D5D5F] pt-[1.375rem] pb-[1.375rem] pl-[1.125rem]" placeholder="Ваш телефон" type="tel">
-                <input class="border-1 border-[#5D5D5F] pt-[1.375rem] pb-[1.375rem] pl-[1.125rem]" placeholder="Автомобиль, который вас интересует" type="text">
-                <button class="text-[1rem]/[150%] text-center font-bold bg-[#030305] text-[#FFFFFF] hover:bg-green-700 rounded-xs font-medium cursor-pointer border-1 border-[#E0E0E0] pt-[1.25rem] pb-[1.25rem]">
+        <div class="max-w-[81.5rem] w-full flex pt-[3.75rem] ">
+            <div class="max-w-[21.5rem] w-full relative z-1 flex flex-col gap-[0.9375rem]"> 
+                <input class="border-1 border-[#5D5D5F] bg-[#FFFFFF] pt-[1.375rem] pb-[1.375rem] pl-[1.125rem]" placeholder="Ваше имя" type="text">
+                <input class="border-1 border-[#5D5D5F] bg-[#FFFFFF] pt-[1.375rem] pb-[1.375rem] pl-[1.125rem]" placeholder="Ваш телефон" type="tel">
+                <input class="border-1 border-[#5D5D5F] bg-[#FFFFFF] pt-[1.375rem] pb-[1.375rem] pl-[1.125rem]" placeholder="Автомобиль, который вас интересует" type="text">
+                <button class="text-[1rem]/[150%] text-center font-bold bg-[#030305] border-[#030305] text-[#FFFFFF] hover:bg-green-700 rounded-xs font-medium cursor-pointer pt-[1.25rem] pb-[1.25rem]">
                     Узнать цену
                 </button>
             </div>
-            <img class="absolute pl-[30rem]" src="./Auto-img/rolls.svg" alt="">
+            <img class="absolute max-w-[50rem] w-full right-[1rem]" src="./Auto-img/rolls.svg" alt="">
         </div>
     </section>
-    <footer class="max-w-[100%] w-full border-t-[0.0625rem] border-[#E5E5E5] mx-auto mt-[13rem]">
-        <div class="max-w-[81.5rem] mx-auto flex justify-between items-center pt-[1.625rem] pb-[1.625rem] pr-[7.15rem]">
+    <footer class="max-w-[90rem] w-full border-t-[0.0625rem] border-[#E5E5E5] mx-auto mt-[13rem]">
+        <div class="max-w-[81.5rem] mx-auto flex justify-between items-center pt-[1.625rem] pr-[7.15rem] pb-[1.625rem] pl-[1.625rem]">
             <img class="cursor-pointer" src="./Auto-img/logo.svg" alt="">
             <a class="text-[0.9375rem]/[100%] text-[#030305] font-medium cursor-pointer">
                 Все права защищены
